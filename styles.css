@@ -7,7 +7,7 @@
 }
 
 :root{
-    --clr: #ffffff;
+    --clr: #9bbfff;
 }
 
 html {
@@ -20,12 +20,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    place-items: center;
     background: var(--clr);
 }
 
 .navigation {
     background: #0866FF;
-    background-image: linear-gradient(to bottom, #0070C0, #73A6FF);
+    background-image: linear-gradient(to bottom, #0070C0, #9bbfff);
     width: 100%;
     height: 250px;
     display: flex;
@@ -73,7 +74,7 @@ body {
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: var(--clr);
+    color: #fff;
 }
 
 .navigation ul li.active a .icon{
@@ -141,7 +142,6 @@ section {
     min-height: 100vh;
     text-align: center;
     color: #000000;
-    box-shadow: 3px 1px 10px ;
 }
 
 #about h2 {
@@ -161,7 +161,6 @@ section {
     padding-bottom: 5rem;
     text-align: center;
     color: #000000;
-    box-shadow: 3px 0px 10px;
 }
 
 #services h2 {
@@ -180,82 +179,76 @@ section {
 }
 
 #contact{
-    margin-top: 5rem;
-    padding-top: 8rem;
-    background: #778bfa;
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+}
+
+form{
+    background: #0866FF;
+    background-image: linear-gradient(to bottom, #0070C0, #9bbfff);
     color: #ffffff;
     border-radius: 10px;
     padding: 30px 40px;
-    align-self: center;
-    left: 1000px;
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
 }
 
-#contact h1{
+form h1{
     font-size: 36px;
     text-align: center;
 }
 
-#contact .input-box{
-    position: relative;
+input, textarea, button {
+    display: block;
     width: 100%;
-    height: 50px;
-    margin: 30px 0;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: nono;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #000000;
-    padding: 20px 45px 20px 20px;
+input, textarea{
+    margin-bottom: 1rem;
+    border: 0.125rem, solid, transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s,
+    boxshadow 0.3s;
 }
 
-.input-box input::placeholder{
-    color: #ffffff;
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #1d90f5;
+  box-shadow: 0 0 0 0.3125rem #26344a;
 }
 
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+textarea {
+    min-height: 12.5rem;
+    resize: vertical;
 }
 
-button{
-    width: 100%;
-    height: 45px;
-    background: #fff;
+button {
     border: none;
-    outline: none;
     border-radius: 99px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    color: gray;
+    background: #ffffff;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 16px;
-    color: .333;
-    font-weight: 600;
-}
-
-button:hover,
-button:focus {
+  }
+  
+  button:hover,
+  button:focus {
     outline: none;
-    background: #ffffffaf;
-}
-
-button:disabled {
+    background: #0070C0;
+  }
+  
+  button:disabled {
     cursor: not-allowed;
-    background: #ffffff00;
-}
-
-#contact {
-    text-align: center;
-}
+    background: #555b69;
+  }
 
 footer {
     background-color: .333;

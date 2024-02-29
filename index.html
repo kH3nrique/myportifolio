@@ -19,7 +19,7 @@
                         <span class="icon">
                             <i class='bx bx-home-alt-2'></i>
                         </span>
-                        <span class="text" style="font-family: 'Roboto', sans-serif;">Home</span>
+                        <span class="text" style="font-family: 'Roboto', sans-serif; color: #fff;">Home</span>
                     </a>
                 </li>
                 <li class="list">
@@ -27,7 +27,7 @@
                         <span class="icon">
                             <i class='bx bx-message-error'></i>
                         </span>
-                        <span class="text" style="font-family: 'Roboto', sans-serif;">Sobre mim</span>
+                        <span class="text" style="font-family: 'Roboto', sans-serif; color: #fff;">Sobre mim</span>
                     </a>
                 </li>
                 <li class="list">
@@ -35,7 +35,7 @@
                         <span class="icon">
                             <i class='bx bx-briefcase-alt'></i>
                         </span>
-                        <span class="text" style="font-family: 'Roboto', sans-serif;">Meus projetos</span>  
+                        <span class="text" style="font-family: 'Roboto', sans-serif; color: #fff;">Meus projetos</span>  
                     </a>
                 </li>
                 <li class="list">
@@ -43,7 +43,7 @@
                         <span class="icon">
                             <i class='bx bx-message'></i>
                         </span> 
-                        <span class="text" style="font-family: 'Roboto', sans-serif;">Contato</span> 
+                        <span class="text" style="font-family: 'Roboto', sans-serif; color: #fff;">Contato</span> 
                     </a>
                 </li>
                 <div class="indicator"></div>
@@ -63,39 +63,33 @@
     
     <main>
         <section class="center-lize">
-            <h2>Bem vindo</h2>
+            <h2 style="color: #fff;">Bem vindo</h2>
         </section>
         <section id="about">
-            <h2 style="text-align: center; font-family: 'Roboto', sans-serif;" >Sobre mim</h2>
+            <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #fff;" >Sobre mim</h2>
             <p></p>
         </section>
         <section id="services">
-            <h2 style="font-family: 'Roboto', sans-serif;">Nossos Serviços</h2>
+            <h2 style="font-family: 'Roboto', sans-serif; color: #fff;">Meus Projetos</h2>
             <div class="list">
             </div>
         </section>
              
-        <div id="contact">
-            <form data-form action="https://formsubmit.co/ajax/912457e5b8771bb20484161acf383f56" method="POST" onsubmit="enviarEmail(event)">
-                <h1 style="font-family: 'Roboto', sans-serif;">Preencha o Formulário e entraremos em contato com você em breve!</h1>
-                <div class="input-box">
+        <div id="contact"> 
+            <form data-form action="https://formsubmit.co/ajax/9d381b5c41bfeb66e99c705008afd776" method="POST">
+                <h1 style="font-family: 'Roboto', sans-serif;">Entre em contato comigo atravez do formulario</h1>
                     <input name="name" id="nome" type="text" placeholder="Seu nome" required>
                     <span class="icon"></span><i class='bx bx-user'></i>
-                </div>
-                <div class="input-box">
-                    <input name="city" id="cidade" type="text" placeholder="Cidade" required>
-                    <span class="icon"></span><i class='bx bx-buildings'></i>
-                </div>
-                <div class="input-box">
+    
                     <input name="email" id="email" type="email" placeholder="E-Mail" required>
                     <span class="icon"></span><i class='bx bx-envelope' ></i>
-                </div>
+                    
+                    <textarea name="mensage" id="mensagem" type="text" placeholder="Mensagem" required></textarea>
+                    <span class="icon"></span><i class='bx bx-chat'></i></i>
                 <button type="submit" class="btn" data-button>Enviar</button>
+                <input type="hidden" name="_subject" value="Novo Contato">
             </form>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2023 GV Consultoria e Assessoria. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
