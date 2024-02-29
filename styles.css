@@ -121,7 +121,6 @@ section {
 
 
 #about {
-    padding-top: 8rem;
     min-height: 100vh;
     text-align: center;
     color: #000000;
@@ -140,8 +139,6 @@ section {
 }
 
 #services {
-    padding-top: 8rem;
-    padding-bottom: 5rem;
     text-align: center;
     color: #000000;
 }
@@ -149,16 +146,6 @@ section {
 #services h2 {
     font-size: 3rem;
     margin-bottom: 5rem;
-}
-
-.aboutS{
-    text-align: justify;
-}
-
-.service {
-    flex: 1;
-    text-align: center;
-    font-weight: bold;   
 }
 
 #contact{
