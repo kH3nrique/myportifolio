@@ -158,7 +158,7 @@ section {
     background-position: center;
 }
 
-.list {
+.listPort {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
